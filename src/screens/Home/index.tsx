@@ -7,8 +7,9 @@ import { CategorySelect } from "../../components/CategorySelect";
 import { ListHeader } from "../../components/ListHeader";
 import { Appointment } from "../../components/Appointment";
 import { ListDivider } from "../../components/ListDivider";
+import { Background } from "../../components/Background";
 
-import { Container, Header, Content, Matches } from "./styles";
+import { Header, Content, Matches } from "./styles";
 
 export function Home() {
   const [category, setCategory] = useState("");
@@ -47,7 +48,7 @@ export function Home() {
   }
 
   return (
-    <Container>
+    <Background>
       <Header>
         <Profile />
         <ButtonAdd />
@@ -67,6 +68,6 @@ export function Home() {
           ItemSeparatorComponent={() => <ListDivider />}
         />
       </Content>
-    </Container>
+    </Background>
   );
 }

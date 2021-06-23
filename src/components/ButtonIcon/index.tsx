@@ -1,15 +1,16 @@
 import React from "react";
+import { RectButtonProps } from "react-native-gesture-handler";
 
 import DiscordImg from "../../assets/discord.png";
 import { Container, IconWrapper, Icon, Title } from "./styles";
 
-type Props = {
+type Props = RectButtonProps & {
   title: string;
 };
 
-export function ButtonIcon({ title }: Props) {
+export function ButtonIcon({ title, ...rest }: Props) {
   return (
-    <Container activeOpacity={0.7}>
+    <Container {...rest}>
       <IconWrapper>
         <Icon source={DiscordImg} />
       </IconWrapper>

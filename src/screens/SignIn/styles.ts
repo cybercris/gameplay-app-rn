@@ -13,7 +13,7 @@ export const LeeSinImage = styled.Image`
 
 export const Content = styled.View`
   margin-top: -40px;
-  padding: 50px 0;
+  padding: 0 50px;
 `;
 
 export const Title = styled.Text`
